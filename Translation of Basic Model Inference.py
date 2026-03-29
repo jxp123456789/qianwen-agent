@@ -2,7 +2,7 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 # 👉 已自动替换成你的本地模型路径
-model_path = r"E:\big model use\model\Qwen2.5\qwen\Qwen2__5-0__5B-Instruct"
+model_path = r"E:\big model use\model\Qwen2.5\qwen\Qwen2___5-0___5B-Instruct"
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 tokenizer = AutoTokenizer.from_pretrained(model_path)

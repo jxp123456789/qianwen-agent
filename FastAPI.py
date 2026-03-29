@@ -28,7 +28,7 @@ async def chat(
     messages.append({"role": "user", "content": query})
 
     response = await aclient.chat.completions.create(
-        model="qwen2.5:0.5b",
+        model="qwen:1.8b",
         messages=messages,
         max_tokens=max_tokens,
         temperature=temperature,
